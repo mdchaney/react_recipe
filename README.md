@@ -11,3 +11,7 @@ There are a few changes from the tutorial:
 2. The recipe components are in a subdirectory.
 3. The form is extracted into a separate component and is used for both creating and editing.
 4. The controller uses standard Rails idioms.
+
+TODO:
+
+1. Handle errors from the server properly.
