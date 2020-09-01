@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "../components/Home";
-import Recipes from "../components/Recipes";
-import Recipe from "../components/Recipe";
-import NewRecipe from "../components/NewRecipe";
-import EditRecipe from "../components/EditRecipe";
+import Recipes from "../components/recipes/Recipes";
+import Recipe from "../components/recipes/Recipe";
+import NewRecipe from "../components/recipes/NewRecipe";
+import EditRecipe from "../components/recipes/EditRecipe";
 
 export default (
   <Router>
