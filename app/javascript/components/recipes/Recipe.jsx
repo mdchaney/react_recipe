@@ -99,7 +99,7 @@ class Recipe extends React.Component {
                 {ingredientList}
               </ul>
             </div>
-            <div className="col-sm-12 col-lg-7">
+            <div className="col-sm-12 col-lg-5">
               <h5 className="mb-2">Preparation Instructions</h5>
               <div
                 dangerouslySetInnerHTML={{
@@ -107,13 +107,17 @@ class Recipe extends React.Component {
                 }}
               />
             </div>
-            <div className="col-sm-12 col-lg-2">
+            <div className="col-sm-12 col-lg-4 text-right">
+              <Link to={`/recipes/${this.props.match.params.id}/edit`} className="btn btn-warning mr-2">
+                Edit Recipe
+              </Link>
               <button type="button" className="btn btn-danger" onClick={this.deleteRecipe} data-confirm="Do you really want to remove this recipe?">
                 Delete Recipe
               </button>
             </div>
           </div>
-          <Link to="/recipes" className="btn btn-link">
+          <hr />
+          <Link to="/recipes" className="btn btn-secondary">
             Back to recipes
           </Link>
         </div>
